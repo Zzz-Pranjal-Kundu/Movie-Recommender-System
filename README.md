@@ -61,8 +61,13 @@ To run this project locally, follow these steps:
       Based on the user's input (such as a movie title), the system will recommend movies that are most similar according to the computed similarity matrix.
 
 ## Features
-  Data Pre-processing: Merges and cleans movie and credits data for a unified dataset.
-  Vectorization: Converts text features into numerical vectors for similarity computation.
-  Similarity Computation: Recommends movies based on cosine similarity or other metrics between movie vectors.
-  Pickle Integration: Saves precomputed data to pkl files for faster loading.
-  Interactive Notebook: Explore and visualize the data and recommendations directly within the Jupyter notebook.
+  1. Data Pre-processing:
+                   Merges and cleans movie and credits data for a unified dataset.
+  2. Vectorization:
+                   Converts text features into numerical vectors for similarity computation.
+  3. Similarity Computation:
+                   Recommends movies based on cosine similarity or other metrics between movie vectors.
+  4. Pickle Integration:
+                   Saves precomputed data to pkl files for faster loading.
+  5. Interactive Notebook:
+                   Explore and visualize the data and recommendations directly within the Jupyter notebook.
