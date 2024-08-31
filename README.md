@@ -1,1 +1,68 @@
-# didlyDoo
+# Movie Recommendation System
+
+This project is a **Movie Recommendation System** built using Python. The system recommends movies to users based on their similarity to other movies. The similarity is computed using features extracted from a movie dataset.
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+       git clone https://github.com/your-username/Movie-Recommendation-System.git
+       cd Movie-Recommendation-System
+   
+3. Create and activate a virtual environment (optional but recommended):
+   
+       python -m venv venv
+       source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   
+5. Install the required dependencies:
+   
+       pip install -r requirements.txt
+
+7. Ensure that you have the required data files:
+
+        tmdb_5000_movies.csv: The dataset containing movie information.
+        tmdb_5000_credits.csv: The dataset containing credits information.
+        movie_dict.pkl: Dictionary containing processed movie data.
+        similarity.pkl: Precomputed similarity matrix.
+
+8. Run the Jupyter notebook:
+
+        jupyter notebook "Movie Recommender System.ipynb"
+
+## Usage :
+    To use the system, follow these steps within the Jupyter notebook:
+
+1. Load Data:
+
+      Import the necessary libraries (numpy, pandas).
+      Load the movie dataset (tmdb_5000_movies.csv) and credits dataset (tmdb_5000_credits.csv).
+      Merge the two datasets based on movie titles to create a unified dataset.
+
+2. Pre-process Data:
+   
+      Clean and pre-process the data to extract relevant features like genres, keywords, and cast.
+
+3. Vectorization:
+
+      Transform text data into numerical vectors using techniques like TF-IDF or Count Vectorizer to compute the similarity matrix.
+
+4. Make Recommendations:
+
+      Based on the user's input (such as a movie title), the system will recommend movies that are most similar according to the computed similarity matrix.
+
+## Features
+  Data Pre-processing: Merges and cleans movie and credits data for a unified dataset.
+  Vectorization: Converts text features into numerical vectors for similarity computation.
+  Similarity Computation: Recommends movies based on cosine similarity or other metrics between movie vectors.
+  Pickle Integration: Saves precomputed data to pkl files for faster loading.
+  Interactive Notebook: Explore and visualize the data and recommendations directly within the Jupyter notebook.
