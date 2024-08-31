@@ -62,58 +62,41 @@ To run this project locally, follow these steps:
 
 ## Features
   1. Data Pre-processing:
-     
                    Merges and cleans movie and credits data for a unified dataset.
   2. Vectorization:
-
                    Converts text features into numerical vectors for similarity computation.
   3. Similarity Computation:
-
                    Recommends movies based on cosine similarity or other metrics between movie vectors.
   4. Pickle Integration:
-
                    Saves precomputed data to pkl files for faster loading.
   5. Similarity Computation:
-
                    Calculates cosine similarity scores between movies to generate recommendations.
   6. Pickle Integration:
-
                     Precomputed data is stored in pkl files for faster loading and reuse.
   7. Interactive Jupyter Notebook:
-
                     The project is presented in a Jupyter notebook, allowing for exploration and visualization of data and recommendations.
   8. Interactive Notebook:
-
                     Explore and visualize the data and recommendations directly within the Jupyter notebook.
 
 ## Data
-
-       The data used in this project is sourced from The Movie Database (TMDb). It consists of two main files:
-
+ The data used in this project is sourced from The Movie Database (TMDb). It consists of two main files:
        tmdb_5000_movies.csv: Contains information about 5000 movies.
-       
        tmdb_5000_credits.csv: Contains information about the cast and crew of the movies.
        
 ## Modeling Approach
-
-       This recommendation system is content-based, meaning it relies on the metadata associated with movies to find similarities. The key steps in the modeling approach include:
+This recommendation system is content-based, meaning it relies on the metadata associated with movies to find similarities. The key steps in the modeling approach include:
 
 . Data Preprocessing: 
-                     
                      Cleaning and merging the datasets.
                      
 Feature Engineering: 
-                     
                      Combining relevant textual data into a single feature.
                      
 Vectorization: 
-                     
                      Transforming textual data into numerical vectors.
                      
 Similarity Calculation: 
-
                      Using cosine similarity to find the most similar movies.
-                     
 
                      
-Future improvements could include integrating collaborative filtering methods or hybrid models to enhance the recommendation accuracy.
+Future improvements do include integrating collaborative filtering methods or hybrid models to enhance the recommendation accuracy.
