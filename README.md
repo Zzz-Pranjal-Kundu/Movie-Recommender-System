@@ -100,3 +100,5 @@ Similarity Calculation:
 
                      
 Future improvements do include integrating collaborative filtering methods or hybrid models to enhance the recommendation accuracy.
+
+Demo Link: https://zzzpranjalsmovierecommender.streamlit.app/
